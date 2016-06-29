@@ -1,7 +1,7 @@
 ---
-layout: post
-title: MVC
-order: 1
+layout: page
+title: Mvc
+permalink: /mvc/
 ---
 
 Pracując w AngularJS organizujemy projekt inaczej niż w klasycznym JavsScript.
