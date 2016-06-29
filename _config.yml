@@ -1,5 +1,5 @@
 # Site settings
-title: Your awesome title
+title: iOS Acodemy
 email: your-email@domain.com
 baseurl: "/taken2" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
@@ -9,10 +9,7 @@ description: One sentence introducing yourself or what you do
 
 # Social icons
 facebook: username
-linkedin: username
 github: username
-deviantart: username
-codepen: username
 
 footer: © Taken theme
 
