@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Taken is a two column minimalist Jekyll theme.
+Taken is a two column minimalist Jekyll theme. Hell yeah
 
 Taken is based on [chapter tumblr theme.](http://theme-chapter.tumblr.com/)
 
