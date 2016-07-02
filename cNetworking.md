@@ -57,4 +57,5 @@ Zadanie 4
 
 Wykorzystując protokół JSONDecodable, zaimplementuj brakującą metodę `decodeJSONObject(object: AnyObject) throws` dla obiektu `Track`.
 
-Wykorzystaj istniejące pola struktury Track oraz opis obiektu JSON dostępnego w dokumentacji pod adresem https://developer.spotify.com/web-api/get-albums-tracks/
+Wykorzystaj istniejące pola struktury Track oraz opis obiektu JSON dostępnego w dokumentacji pod adresem:
+*https://developer.spotify.com/web-api/get-albums-tracks/*
