@@ -84,7 +84,6 @@ W metodzie
  
 w zależności od typu obiektu klikniętej komórki wywołaj odpowiednią  funkcję tworzącą kontroler następnego widoku.
 
-Dla .Artist - pokaż fatal error
 
 Zadanie 8
 -----------
