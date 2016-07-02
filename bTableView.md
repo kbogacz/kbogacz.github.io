@@ -27,6 +27,8 @@ Tracks
 * ```limit: 8```
 * ```cellHeight: 45```
                                                                                                   
+Stwórz tablicę o nazwie ```sections``` z nowopowstałymi obiektami. 
+
 
 Zadanie 3
 -----------
@@ -50,25 +52,39 @@ Powtórz powyższe czynności  dla ```SearchResultTableViewCell```
 Zadanie 5
 -----------
 
-clean up cellForRowat IndexPath
-w zaleznosci od itemType sekcji odpal odpowiednia metode do stworzenia celki
+Korzystając z utworzonych w poprzednim zadaniu funkcji 
+uzupełnij metodę 
+
+ ```func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell ```
+
+tak, by w  zaleznosci od typu obiektu sekcji zwracała odpowiedni typ komórki.
+
 
 Zadanie 6
 -----------
+Bazujac na ustawieniach poszczególnych sekcji w  naszesz tablicy o nazwie ```sections``` skonfiguruj poniższe metody:
 
-numbersOfRows bazujac na ilosc elementow w kazdej sekcji
-nubers of sections bazujac na ilosci naszych sekcji
-
-task DidSelecRowAtIndexPath
-zrefaktoruj tworzenie nowego kontolera to osobnej metody przyjmujacej jako parametr przekazywany obiekt album
-oraz dla PLayer przyjmujacy track
-did selecet - w zaleznosci od typu obiektu itemType kliknietej celki pushnij odpowiednij kontroler
-.Artist - pokaz fatal error
+ ```numberOfSectionsInTableView(tableView: UITableView) -> Int```
+ 
+``` tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String?```
+ 
+  ```tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat```
+  
+  ```tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int ```
+ 
 
 Zadanie 7
 -----------
 
-titleForHeaderInSection
-zwroc title dla danego obiektu sections
-height for row
-zwroc cellHeight
+Zrefaktoruj tworzenie nowego kontolera do osobnej metody przyjmujacej jako parametr przekazywany obiekt  ```album```
+dla  ```AlbumViewController``` oraz  ```track``` dla ```PlayerViewController```
+
+ ```tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)  ```
+
+W zależności od typu obiektu klikniętej komórki wywołaj odpowiednią metodę tworzącą kontroler następnego widoku.
+
+Dla .Artist - pokaż fatal error
+
+Zadanie 8
+-----------
+
