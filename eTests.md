@@ -4,8 +4,13 @@ title: Tests
 permalink: /tests/
 ---
 
-## Unit Tests
-### Task #1
+<br>
+
+Zadanie 1
+----------
+
+<br>
+
 Oczekujemy, że użytkownik wchodząc do głównego widok aplikacji zobaczy jego tytuł ``"Feed"``
 
 Zadania:
@@ -20,7 +25,12 @@ Zadania:
 
 --------------
 
-### Task #2
+<br>
+
+Zadanie 2
+--------
+
+<br>
 
 Oczekujemy, że użytkownik wchodząc do widoku albumu zobaczy w nagłówku jego tytuł
 
@@ -41,7 +51,12 @@ wstrzyknij go do testowanego obiektu
 
 ------------
 
-### Task #3
+<br>
+
+Zadanie 3
+---------
+
+<br>
 
 Oczekujemy, że kiedy użytkownik tapnie w `searchBar` i wyszuka `Adele`, tabela się odświeży i wypełni wynikami
 
