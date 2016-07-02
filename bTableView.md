@@ -97,32 +97,30 @@ Zadanie 6
 
 <br>
 
-Bazując na ustawieniach poszczególnych sekcji znajdujących się w tablicy ```sections```, skonfiguruj poniższe metody:
+Bazując na ustawieniach poszczególnych sekcji znajdujących się w tablicy ```sections```, zaktualizuj implementację poniższych metod:
 
 
 *  ```numberOfSectionsInTableView(tableView: UITableView) -> Int```
- 
+
 * ``` tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String?```
- 
+
 *   ```tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat```
-  
+
 *   ```tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int ```
- 
+
 
 <br>
 
 
 Zadanie 7
 -----------
- 
+
 <br>
 
 * Wydziel logikę prezentacji kontrolerów do osobnych metod przyjmujących jako parametr obiekt typu ```Album``` dla ```AlbumViewController``` oraz ```Track``` dla ```PlayerViewController```
 
 * W metodzie
-```tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)  ```
- 
-* W zależności od typu obiektu klikniętej komórki wywołaj odpowiednią  funkcję tworzącą kontroler następnego widoku.
+```tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)  ```, w zależności od typu obiektu klikniętej komórki, wywołaj odpowiednią  metodę prezentującą kontroler następnego widoku.
 
 
 <br>
@@ -138,15 +136,13 @@ Zadanie 8
 
 * Nadpisz metodę
  ```tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView?```
- 
+
 * Jeżeli paramter sekcji ```hasMore``` ma wartość ```true``` stwórz przy pomocy metody ```tableView.dequeueReusableHeaderFooterView()``` obiekt typu  ```MoreResultsFooterView?```.
 
 
-* Dla stworzonego obiektu przypisz do tapAction closure, w którym na aktualnej sekcji ustaw ```expanded = true``` oraz wywołaj utworzoną metodę ```reloadSection(section: Int)```
+* Dla stworzonego obiektu przypisz do tapAction closure, który dla danej sekcji ustawi ```expanded = true``` oraz wywoła wcześniej utworzoną metodę ```reloadSection(section: Int)```.
 
 
-* W funkcji  zwróć odpowiednią wartość wysokości stopki ```tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat ```
+* W funkcji ```tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat ``` zwróć odpowiednią wartość wysokości stopki.
 
-* Jeśli parametr sekcji ```hasMore``` posiada wartość ```true``` ustaw wysokość Footera na ```45.0```. W przeciwnym przypadku niech funkcja zwróci ```CGFloat.min```
-
-
+* Jeśli parametr sekcji ```hasMore``` posiada wartość ```true``` ustaw wysokość Footera na ```45.0```. W innym przypadku funkcja powinna zwrócić ```CGFloat.min```
