@@ -34,9 +34,9 @@ Zadanie 3
 -----------
 
 Musimy zaktualizować funkcje  ```getTopTracks()``` oraz  ```getAlbums()```. 
-Dodaj do nich parametr ```section``` typu  ```SpotifyItemSection``` o odpowiednim typie obiektu - ```Track``` lub ```Album```.
+Dodaj do nich parametr o odpowiednim typie obiektu - ```Track``` lub ```Album```.
 
-W przypadku pomyślnego otrzymania obiektu przypisz go do ```section.typedItems = tracks``` oraz ustaw ```section.expanded = false```
+W przypadku pomyślnego otrzymania obiektu przypisz go do ```section.items``` odpowiedniej sekcji oraz ustaw ```section.expanded = false```
 
 Odśwież tabelę w clousure  ```clearAllNotice(closure: () ->())```
 
