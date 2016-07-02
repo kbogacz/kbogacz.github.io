@@ -25,8 +25,10 @@ uzupełnij je następującymi wartościami:
   * rootKeyPath: "tracks"
 
 <br>
+
 Zadanie 2
 ----------
+
 <br>
 
 W pliku *Api.Swift* uzupełnij ciało metody ```absoluteURL(endpoint: Endpoint) -> NSURL?```, która zwraca obiekt NSURL na podstawie przekazanego argumentu `endpoint` oraz `API.baseURL`.
@@ -34,8 +36,10 @@ W pliku *Api.Swift* uzupełnij ciało metody ```absoluteURL(endpoint: Endpoint) 
 Zwracany obiekt `NSURL` musi zawierać wartości z `endpoint.parameters`. Wykorzystaj do tego celu `NSURLComponents` oraz `NSURLQueryItem`.
 
 <br>
+
 Zadanie 3
 ----------
+
 <br>
 
 W pliku *Api.Swift* uzpełnij ciało metody `request()`.
@@ -51,10 +55,12 @@ W pliku *Api.Swift* uzpełnij ciało metody `request()`.
 
 
 Do parsowania błędów zwróconych przez API użyj metody ```createNSErrorFromJson(json: JSON?) -> NSError?```
+
 <br>
 
 Zadanie 4
 ----------
+
 <br>
 
 Wykorzystując protokół JSONDecodable, zaimplementuj brakującą metodę `decodeJSONObject(object: AnyObject) throws` dla obiektu `Track`.
