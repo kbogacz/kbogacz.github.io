@@ -35,6 +35,7 @@ Tracks
 * ```cellHeight: 45```
                                                                                                   
 <br>
+
 * Stwórz tablicę o nazwie ```sections``` z nowopowstałymi obiektami. 
 
 
@@ -46,8 +47,8 @@ Zadanie 3
 
 <br>
 
+Zaktualizuj metody ```getTopTracks()``` oraz  ```getAlbums()``` tak, aby uwzględniały nowe źródła danych ```UITableView```
 
-Musimy zaktualizować funkcje  ```getTopTracks()``` oraz  ```getAlbums()```. 
 
 * Dodaj do nich parametr o odpowiednim typie obiektu ```SpotifyItemSection <>```.
 
@@ -66,7 +67,7 @@ Zadanie 4
 
 * Stwórz metodę zwracającą komorkę typu  ```AlbumTrackTableViewCell``` przy użyciu ```tableView.dequeReusableCell(indexPath:indexPath)```. 
 
-* Skonfiguruj komórkę obiektem  z tabeli ```typedItems``` odpowiedniej sekcji.
+* Skonfiguruj komórkę obiektem  z tabeli ```items``` odpowiedniej sekcji.
 
 * Zaimplementuj analogiczną metodę dla  ```SearchResultTableViewCell```
 
