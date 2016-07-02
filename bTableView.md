@@ -10,7 +10,7 @@ Zadanie 1
 
 <br>
 
-Przenieś metody protokołów```UITableViewDataSource``` oraz  ```UITableViewDelegate``` do ```Extension``` klasy ```ArtistViewController```
+* Przenieś metody protokołów```UITableViewDataSource``` oraz  ```UITableViewDelegate``` do ```Extension``` klasy ```ArtistViewController```
 
 <br>
 
@@ -20,7 +20,7 @@ Zadanie 2
 
 <br>
 
-Stwórz dwa obiekty typu ```SpotifyItemSection``` dla typów ```Album``` i ```Track``` z parametrami
+* Stwórz dwa obiekty typu ```SpotifyItemSection``` dla typów ```Album``` i ```Track``` z parametrami
 
 Album
 
@@ -34,7 +34,8 @@ Tracks
 * ```limit: 8```
 * ```cellHeight: 45```
                                                                                                   
-Stwórz tablicę o nazwie ```sections``` z nowopowstałymi obiektami. 
+<br>
+* Stwórz tablicę o nazwie ```sections``` z nowopowstałymi obiektami. 
 
 
 <br>
@@ -78,7 +79,7 @@ Zadanie 5
 
 <br>
 
-Korzystając z utworzonych w poprzednim zadaniu metod, uzupełnij implementację
+* Korzystając z utworzonych w poprzednim zadaniu metod, uzupełnij implementację
 <br>
  ```func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell ```
 <br>
