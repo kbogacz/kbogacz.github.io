@@ -115,9 +115,7 @@ Zadanie 7
  
 <br>
 
-
-* Przenieś tworzenie nowych  kontrolerów do osobnych metod przyjmujących jako parametr przekazywany obiekt  ```album```
-dla  ```AlbumViewController``` oraz  ```track``` dla ```PlayerViewController```
+* Wydziel logikę prezentacji kontrolerów do osobnych metod przyjmujących jako parametr obiekt typu ```Album``` dla ```AlbumViewController``` oraz ```Track``` dla ```PlayerViewController```
 
 * W metodzie
 ```tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)  ```
