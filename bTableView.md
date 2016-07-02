@@ -10,7 +10,7 @@ Zadanie 1
 
 <br>
 
-Przenieś metody delegatów ```UITableViewDataSource``` oraz  ```UITableViewDelegate``` do ```Extension``` klasy ```ArtistViewController```
+Przenieś metody protokołów```UITableViewDataSource``` oraz  ```UITableViewDelegate``` do ```Extension``` klasy ```ArtistViewController```
 
 <br>
 
@@ -80,8 +80,9 @@ Zadanie 5
 <br>
 
 Korzystając z utworzonych w poprzednim zadaniu metod, uzupełnij implementację
+<br>
  ```func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell ```
-
+<br>
 tak, by w zależności od typu obiektu sekcji zwracała odpowiedni typ komórki.
 
 
@@ -114,13 +115,13 @@ Zadanie 7
 <br>
 
 
-Przenieś tworzenie nowych  kontrolerów do osobnych metod przyjmujących jako parametr przekazywany obiekt  ```album```
+* Przenieś tworzenie nowych  kontrolerów do osobnych metod przyjmujących jako parametr przekazywany obiekt  ```album```
 dla  ```AlbumViewController``` oraz  ```track``` dla ```PlayerViewController```
 
-W metodzie
+* W metodzie
 ```tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)  ```
  
-w zależności od typu obiektu klikniętej komórki wywołaj odpowiednią  funkcję tworzącą kontroler następnego widoku.
+* W zależności od typu obiektu klikniętej komórki wywołaj odpowiednią  funkcję tworzącą kontroler następnego widoku.
 
 
 <br>
