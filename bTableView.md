@@ -8,10 +8,18 @@ permalink: /tableView/
 Zadanie 1
 ----------
 
+<br>
+
 Przenieś metody delegatów ```UITableViewDataSource``` oraz  ```UITableViewDelegate``` do ```Extension``` klasy ```ArtistViewController```
+
+<br>
+
 
 Zadanie 2
 -----------
+
+<br>
+
 
 Stwórz dwa obiekty typu ```SpotifyItemSection``` dla obiektów typu ```Album``` i ```Track``` z parametrami
 
@@ -30,8 +38,14 @@ Tracks
 Stwórz tablicę o nazwie ```sections``` z nowopowstałymi obiektami. 
 
 
+<br>
+
+
 Zadanie 3
 -----------
+
+<br>
+
 
 Musimy zaktualizować funkcje  ```getTopTracks()``` oraz  ```getAlbums()```. 
 Dodaj do nich parametr o odpowiednim typie obiektu - ```Track``` lub ```Album```.
@@ -40,8 +54,14 @@ W przypadku pomyślnego otrzymania obiektu przypisz go do ```section.items``` od
 
 Odśwież tabelę w clousure  ```clearAllNotice(closure: () ->())```
 
+<br>
+
+
 Zadanie 4
 -----------
+
+<br>
+
 
 Stwórz metodę zwracającą komorkę typu  ```AlbumTrackTableViewCell``` przy użyciu ```tableView.dequeReusableCell(indexPath:indexPath)```. Pamiętaj by w metodzie dodać paramter ```indexPath```.
 
@@ -49,8 +69,14 @@ Skonfiguruj komórkę obiektem  z tabeli ```typedItems``` odpowiedniej sekcji.
 
 Powtórz powyższe czynności  dla  komórki typu ```SearchResultTableViewCell```
 
+<br>
+
+
 Zadanie 5
 -----------
+
+<br>
+
 
 Korzystając z utworzonych w poprzednim zadaniu funkcji 
 uzupełnij metodę 
@@ -60,8 +86,14 @@ uzupełnij metodę
 tak, by w  zależności od typu obiektu sekcji zwracała odpowiedni typ komórki.
 
 
+<br>
+
+
 Zadanie 6
 -----------
+
+<br>
+
 Bazując na ustawieniach poszczególnych sekcji  naszej tablicy o nazwie ```sections``` skonfiguruj poniższe metody:
 
  ```numberOfSectionsInTableView(tableView: UITableView) -> Int```
@@ -73,9 +105,15 @@ Bazując na ustawieniach poszczególnych sekcji  naszej tablicy o nazwie ```sect
   ```tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int ```
  
 
+<br>
+
+
 Zadanie 7
 -----------
  
+<br>
+
+
 Przenieś tworzenie nowych  kontrolerów do osobnych metod przyjmujących jako parametr przekazywany obiekt  ```album```
 dla  ```AlbumViewController``` oraz  ```track``` dla ```PlayerViewController```
 
@@ -85,18 +123,25 @@ W metodzie
 w zależności od typu obiektu klikniętej komórki wywołaj odpowiednią  funkcję tworzącą kontroler następnego widoku.
 
 
+<br>
+
+
 Zadanie 8
 -----------
+
+<br>
+
+
+Stwórz metodę ```reloadSection(section: Int)``` która przeładowuje naszą wskazaną sekcję w naszej tabeli z efektem .Fade.
+
 Nadpisz metodę
  ```tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView?```
  
 Jeżeli paramter sekcji ```hasMore``` jest prawdziwy stwórz przy pomocy metody ```tableView.dequeueReusableHeaderFooterView()``` obiekt typu  ```MoreResultsFooterView?```.
 
-Stwórz metodę ```reloadSection(section: Int)``` która przeładowuje naszą wskazaną sekcję w naszej tabeli z efektem .Fade.
 
-W nowostworzonym obiekcie przypisz do tapAction .....
-JAK TO OPISAC 
-ustaw na aktualnej sekcji ```expanded = true``` oraz wywołaj utworzoną metodę ```reloadSection(section: Int)```
+Dla stworzonego obiektu przypisz do tapAction closure, w którym na aktualnej sekcji ustaw ```expanded = true``` oraz wywołaj utworzoną metodę ```reloadSection(section: Int)```
+
 
 W funkcji  zwróć odpowiednią wartość wysokości stopki ```tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat ```
 
