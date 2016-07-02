@@ -33,10 +33,10 @@ Tracks
 * ```title: "Tracks"```
 * ```limit: 8```
 * ```cellHeight: 45```
-                                                                                                  
+
 <br>
 
-* Stwórz tablicę o nazwie ```sections``` z nowopowstałymi obiektami. 
+* Stwórz tablicę o nazwie ```sections``` z nowopowstałymi obiektami.
 
 
 <br>
@@ -52,7 +52,9 @@ Zaktualizuj metody ```getTopTracks()``` oraz  ```getAlbums()``` tak, aby uwzglę
 
 * Dodaj do nich parametr o odpowiednim typie obiektu ```SpotifyItemSection <>```.
 
-* W przypadku pomyślnego otrzymania obiektu przypisz go do ```section.items``` odpowiedniej sekcji oraz ustaw ```section.expanded = false```
+* Usuń stare metody `show`
+
+* Ustaw w sekcji property `expand = false` oraz przypisz otrzymane obiekty do `items`
 
 * Odśwież tabelę w clousure  ```clearAllNotice(closure: () ->())```
 
@@ -65,7 +67,7 @@ Zadanie 4
 <br>
 
 
-* Stwórz metodę zwracającą komorkę typu  ```AlbumTrackTableViewCell``` przy użyciu ```tableView.dequeReusableCell(indexPath:indexPath)```. 
+* Stwórz metodę zwracającą komorkę typu  ```AlbumTrackTableViewCell``` przy użyciu ```tableView.dequeReusableCell(indexPath:indexPath)```.
 
 * Skonfiguruj komórkę obiektem  z tabeli ```items``` odpowiedniej sekcji.
 
