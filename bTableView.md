@@ -8,7 +8,7 @@ permalink: /tableView/
 Zadanie 1
 ----------
 
-Przenieś metody delegatów ```UITableViewDataSource``` oraz  ```UITableViewDelegate``` do ```Extension``` klasy
+Przenieś metody delegatów ```UITableViewDataSource``` oraz  ```UITableViewDelegate``` do ```Extension``` klasy ```ArtistViewController```
 
 Zadanie 2
 -----------
@@ -36,18 +36,18 @@ Zadanie 3
 Musimy zaktualizować funkcje  ```getTopTracks()``` oraz  ```getAlbums()```. 
 Dodaj do nich parametr ```section``` typu  ```SpotifyItemSection``` o odpowiednim typie obiektu - ```Track``` lub ```Album```.
 
-W przypadku pomyślnego ptrzymania obiektu przypisz go do ```section.typedItems = tracks``` oraz ustaw ```section.expanded = false```
+W przypadku pomyślnego otrzymania obiektu przypisz go do ```section.typedItems = tracks``` oraz ustaw ```section.expanded = false```
 
-Odwiez tabele w clouserze  ```clearAllNotice(closure: () ->())```
+Odśwież tabelę w clousure  ```clearAllNotice(closure: () ->())```
 
 Zadanie 4
 -----------
 
 Stwórz metodę zwracającą komorkę typu  ```AlbumTrackTableViewCell``` przy użyciu ```tableView.dequeReusableCell(indexPath:indexPath)```. Pamiętaj by w metodzie dodać paramter ```indexPath```.
 
-Skonfiguruj celkę obiektem  z tabeli ```typedItems``` odpowiedniej sekcji.
+Skonfiguruj komórkę obiektem  z tabeli ```typedItems``` odpowiedniej sekcji.
 
-Powtórz powyższe czynności  dla ```SearchResultTableViewCell```
+Powtórz powyższe czynności  dla  komórki typu ```SearchResultTableViewCell```
 
 Zadanie 5
 -----------
@@ -57,12 +57,12 @@ uzupełnij metodę
 
  ```func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell ```
 
-tak, by w  zaleznosci od typu obiektu sekcji zwracała odpowiedni typ komórki.
+tak, by w  zależności od typu obiektu sekcji zwracała odpowiedni typ komórki.
 
 
 Zadanie 6
 -----------
-Bazujac na ustawieniach poszczególnych sekcji w  naszesz tablicy o nazwie ```sections``` skonfiguruj poniższe metody:
+Bazując na ustawieniach poszczególnych sekcji  naszej tablicy o nazwie ```sections``` skonfiguruj poniższe metody:
 
  ```numberOfSectionsInTableView(tableView: UITableView) -> Int```
  
@@ -75,16 +75,32 @@ Bazujac na ustawieniach poszczególnych sekcji w  naszesz tablicy o nazwie ```se
 
 Zadanie 7
 -----------
-
-Zrefaktoruj tworzenie nowego kontolera do osobnej metody przyjmujacej jako parametr przekazywany obiekt  ```album```
+ 
+Przenieś tworzenie nowych  kontrolerów do osobnych metod przyjmujących jako parametr przekazywany obiekt  ```album```
 dla  ```AlbumViewController``` oraz  ```track``` dla ```PlayerViewController```
 
- ```tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)  ```
-
-W zależności od typu obiektu klikniętej komórki wywołaj odpowiednią metodę tworzącą kontroler następnego widoku.
+W metodzie
+```tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)  ```
+ 
+w zależności od typu obiektu klikniętej komórki wywołaj odpowiednią  funkcję tworzącą kontroler następnego widoku.
 
 Dla .Artist - pokaż fatal error
 
 Zadanie 8
 -----------
+Nadpisz metodę
+ ```tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView?```
+ 
+Jeżeli paramter sekcji ```hasMore``` jest prawdziwy stwórz przy pomocy metody ```tableView.dequeueReusableHeaderFooterView()``` obiekt typu  ```MoreResultsFooterView?```.
+
+Stwórz metodę ```reloadSection(section: Int)``` która przeładowuje naszą wskazaną sekcję w naszej tabeli z efektem .Fade.
+
+W nowostworzonym obiekcie przypisz do tapAction .....
+JAK TO OPISAC 
+ustaw na aktualnej sekcji ```expanded = true``` oraz wywołaj utworzoną metodę ```reloadSection(section: Int)```
+
+W funkcji  zwróć odpowiednią wartość wysokości stopki ```tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat ```
+
+Jeśli parametr sekcji ```hasMore``` posiada wartość ```true``` ustaw wysokość Footera na ```45.0```. W przeciwnym przypadku niech funkcja zwróci ```CGFloat.min```
+
 
