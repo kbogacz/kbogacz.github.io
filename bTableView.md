@@ -20,8 +20,7 @@ Zadanie 2
 
 <br>
 
-
-Stwórz dwa obiekty typu ```SpotifyItemSection``` dla obiektów typu ```Album``` i ```Track``` z parametrami
+Stwórz dwa obiekty typu ```SpotifyItemSection``` dla typów ```Album``` i ```Track``` z parametrami
 
 Album
 
